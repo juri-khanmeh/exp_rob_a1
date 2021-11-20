@@ -1,0 +1,4 @@
+---
+int16 id
+string type
+string info

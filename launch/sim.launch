@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+	
+   <node name="HintServer" pkg="exp_rob_a1" type ="hint_server"/>
+   <node name="oracleServer"  pkg="exp_rob_a1" type="oracle_server" />
+   <node name="englishServer"  pkg="exp_rob_a1" type="converter_server" />
+   <node name="randServer" pkg="exp_rob_a1" type="rand_server"/>
+   <node name="GoPoint" pkg="exp_rob_a1" type="goPoint.py"/>
+
+
+</launch>

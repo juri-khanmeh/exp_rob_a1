@@ -1,0 +1,136 @@
+\hypertarget{state__machine_8cpp}{}\doxysection{src/state\+\_\+machine.cpp File Reference}
+\label{state__machine_8cpp}\index{src/state\_machine.cpp@{src/state\_machine.cpp}}
+
+
+state machine for exp\+\_\+rob\+\_\+a1 control  
+
+
+{\ttfamily \#include \char`\"{}ros/ros.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}exp\+\_\+rob\+\_\+a1/\+Hint.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}exp\+\_\+rob\+\_\+a1/\+Position.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}exp\+\_\+rob\+\_\+a1/\+Rand\+\_\+\+Target.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}exp\+\_\+rob\+\_\+a1/\+Check\+\_\+id.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}exp\+\_\+rob\+\_\+a1/\+Sentence.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}std\+\_\+msgs/\+String.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}geometry\+\_\+msgs/\+Point.\+h\char`\"{}}\newline
+Include dependency graph for state\+\_\+machine.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{state__machine_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structhint}{hint}}
+\item 
+struct \mbox{\hyperlink{structdata__table}{data\+\_\+table}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{state__machine_8cpp_a9dd56e6c3b4056c8ab3b7bc067909fee}{check\+\_\+consistence}} (int ID)
+\begin{DoxyCompactList}\small\item\em function for checking consistency \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{state__machine_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em main function \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{state__machine_8cpp_af39bfb192875021f7155807d36c010b0}\label{state__machine_8cpp_af39bfb192875021f7155807d36c010b0}} 
+\mbox{\hyperlink{structdata__table}{data\+\_\+table}} $\ast$ {\bfseries Data} = new \mbox{\hyperlink{structdata__table}{data\+\_\+table}}\mbox{[}5\mbox{]}
+\item 
+\mbox{\Hypertarget{state__machine_8cpp_a1498a3601495c323f429de1351872371}\label{state__machine_8cpp_a1498a3601495c323f429de1351872371}} 
+exp\+\_\+rob\+\_\+a1\+::\+Rand\+\_\+\+Target {\bfseries target}
+\item 
+\mbox{\Hypertarget{state__machine_8cpp_a8677af45a05a93a77dc8c31a5ac4a48c}\label{state__machine_8cpp_a8677af45a05a93a77dc8c31a5ac4a48c}} 
+exp\+\_\+rob\+\_\+a1\+::\+Hint {\bfseries hint\+\_\+s}
+\item 
+\mbox{\Hypertarget{state__machine_8cpp_aa2071d4c9b21b03a538481a5fd35c31a}\label{state__machine_8cpp_aa2071d4c9b21b03a538481a5fd35c31a}} 
+exp\+\_\+rob\+\_\+a1\+::\+Position {\bfseries position\+\_\+s}
+\item 
+\mbox{\Hypertarget{state__machine_8cpp_a40229561ff91712a60735b606b9a83b6}\label{state__machine_8cpp_a40229561ff91712a60735b606b9a83b6}} 
+exp\+\_\+rob\+\_\+a1\+::\+Check\+\_\+id {\bfseries check}
+\item 
+\mbox{\Hypertarget{state__machine_8cpp_a451dc23069922fd90db60d3d0bcb47fd}\label{state__machine_8cpp_a451dc23069922fd90db60d3d0bcb47fd}} 
+exp\+\_\+rob\+\_\+a1\+::\+Sentence {\bfseries se}
+\item 
+\mbox{\Hypertarget{state__machine_8cpp_acef3c4ab312730c812bd2b6496da9931}\label{state__machine_8cpp_acef3c4ab312730c812bd2b6496da9931}} 
+geometry\+\_\+msgs\+::\+Point {\bfseries T\+\_\+vel}
+\item 
+\mbox{\Hypertarget{state__machine_8cpp_a6fa64f4168ba90c25d4c98a01772dc7e}\label{state__machine_8cpp_a6fa64f4168ba90c25d4c98a01772dc7e}} 
+ros\+::\+Service\+Client {\bfseries client\+\_\+room}
+\item 
+\mbox{\Hypertarget{state__machine_8cpp_ac4140dbfb87fb97e8fe07667d87cb984}\label{state__machine_8cpp_ac4140dbfb87fb97e8fe07667d87cb984}} 
+ros\+::\+Service\+Client {\bfseries client\+\_\+hint}
+\item 
+\mbox{\Hypertarget{state__machine_8cpp_aa50d5d0ba5ef8ce6f0a046d81f54dd71}\label{state__machine_8cpp_aa50d5d0ba5ef8ce6f0a046d81f54dd71}} 
+ros\+::\+Service\+Client {\bfseries client\+\_\+go}
+\item 
+\mbox{\Hypertarget{state__machine_8cpp_a122f3b351139303a73bbe551228bf243}\label{state__machine_8cpp_a122f3b351139303a73bbe551228bf243}} 
+ros\+::\+Service\+Client {\bfseries client\+\_\+oracle}
+\item 
+\mbox{\Hypertarget{state__machine_8cpp_ad24976b609ecbb4ce6c12e0c3cff1b6e}\label{state__machine_8cpp_ad24976b609ecbb4ce6c12e0c3cff1b6e}} 
+ros\+::\+Service\+Client {\bfseries client\+\_\+sentence}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+state machine for exp\+\_\+rob\+\_\+a1 control 
+
+\begin{DoxyAuthor}{Author}
+Juri Khanmeh 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+20/11/2021
+\end{DoxyDate}
+Services \+: ~\newline
+ ° /go\+\_\+point ° /target ° /hint ° /oracle ° /eng\+\_\+sentence
+
+Description \+:
+
+This file defines the state machine of Cluedo game control. The node receives a random room position through /target topic. Then the robot reaches that room. Once the robot reaches the room, the node receives a hint. It repeats the process until a consistent hypothesis is found. The game ends when the correct hypothesis is found. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{state__machine_8cpp_a9dd56e6c3b4056c8ab3b7bc067909fee}\label{state__machine_8cpp_a9dd56e6c3b4056c8ab3b7bc067909fee}} 
+\index{state\_machine.cpp@{state\_machine.cpp}!check\_consistence@{check\_consistence}}
+\index{check\_consistence@{check\_consistence}!state\_machine.cpp@{state\_machine.cpp}}
+\doxysubsubsection{\texorpdfstring{check\_consistence()}{check\_consistence()}}
+{\footnotesize\ttfamily bool check\+\_\+consistence (\begin{DoxyParamCaption}\item[{int}]{ID }\end{DoxyParamCaption})}
+
+
+
+function for checking consistency 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & ID \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean
+\end{DoxyReturn}
+This function checks the consistency of given hypothesis. It returns True if the hypothesis is consistent. Otherwise it returns False. \mbox{\Hypertarget{state__machine_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{state__machine_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{state\_machine.cpp@{state\_machine.cpp}!main@{main}}
+\index{main@{main}!state\_machine.cpp@{state\_machine.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+main function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & \\
+\hline
+{\em argv} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+always true.
+\end{DoxyReturn}
+The main function initializes the node, creates a \textquotesingle{}/go\+\_\+point\textquotesingle{}, \textquotesingle{}/target\textquotesingle{}, \textquotesingle{}/hint\textquotesingle{}, \textquotesingle{}/oracle\textquotesingle{}, \textquotesingle{}/eng\+\_\+sentence\textquotesingle{} service clients Then in the main while loop, it receives a random room position, go to that room and receives hints. Once the node recieves a complete hypothesis, it checks its consistency. If the correct hypothesis is found, the game is over. 

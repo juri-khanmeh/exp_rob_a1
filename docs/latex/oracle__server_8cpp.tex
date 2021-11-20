@@ -1,0 +1,93 @@
+\hypertarget{oracle__server_8cpp}{}\doxysection{src/oracle\+\_\+server.cpp File Reference}
+\label{oracle__server_8cpp}\index{src/oracle\_server.cpp@{src/oracle\_server.cpp}}
+
+
+This file defines the oracle service.  
+
+
+{\ttfamily \#include \char`\"{}ros/ros.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}exp\+\_\+rob\+\_\+a1/\+Check\+\_\+id.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Include dependency graph for oracle\+\_\+server.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{oracle__server_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{oracle__server_8cpp_a2cbfbb7af8824ec3bcd1d836298b1f54}{oracle\+\_\+callback}} (exp\+\_\+rob\+\_\+a1\+::\+Check\+\_\+id\+::\+Request \&req, exp\+\_\+rob\+\_\+a1\+::\+Check\+\_\+id\+::\+Response \&res)
+\begin{DoxyCompactList}\small\item\em \textquotesingle{}/oracle\textquotesingle{} server callback \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{oracle__server_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em main function \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{oracle__server_8cpp_a9f6bc5c7ed821c4ced5bac90d1dce71d}\label{oracle__server_8cpp_a9f6bc5c7ed821c4ced5bac90d1dce71d}} 
+int \mbox{\hyperlink{oracle__server_8cpp_a9f6bc5c7ed821c4ced5bac90d1dce71d}{I\+D\+\_\+solution}} = 4
+\begin{DoxyCompactList}\small\item\em the correct hypothesis ID \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file defines the oracle service. 
+
+\begin{DoxyAuthor}{Author}
+Juri Khanmeh 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+20/11/2021
+\end{DoxyDate}
+Services \+: ~\newline
+ ° /oracle
+
+Description \+:
+
+This node is an oracle server. The client ask to check whether the given ID is the correct ID or not 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{oracle__server_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{oracle__server_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{oracle\_server.cpp@{oracle\_server.cpp}!main@{main}}
+\index{main@{main}!oracle\_server.cpp@{oracle\_server.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+main function 
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & \\
+\hline
+{\em argv} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+always true.
+\end{DoxyReturn}
+The main function initializes the node and creates a \textquotesingle{}/oracle\textquotesingle{} service server. \mbox{\Hypertarget{oracle__server_8cpp_a2cbfbb7af8824ec3bcd1d836298b1f54}\label{oracle__server_8cpp_a2cbfbb7af8824ec3bcd1d836298b1f54}} 
+\index{oracle\_server.cpp@{oracle\_server.cpp}!oracle\_callback@{oracle\_callback}}
+\index{oracle\_callback@{oracle\_callback}!oracle\_server.cpp@{oracle\_server.cpp}}
+\doxysubsubsection{\texorpdfstring{oracle\_callback()}{oracle\_callback()}}
+{\footnotesize\ttfamily bool oracle\+\_\+callback (\begin{DoxyParamCaption}\item[{exp\+\_\+rob\+\_\+a1\+::\+Check\+\_\+id\+::\+Request \&}]{req,  }\item[{exp\+\_\+rob\+\_\+a1\+::\+Check\+\_\+id\+::\+Response \&}]{res }\end{DoxyParamCaption})}
+
+
+
+\textquotesingle{}/oracle\textquotesingle{} server callback 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \&req} & an ID \\
+\hline
+{\em \&res} & True/\+False \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+always true as this method cannot fail.
+\end{DoxyReturn}
+This funtion verifies if the ID is correct or not 
