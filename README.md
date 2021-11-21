@@ -27,7 +27,7 @@ The packege implement a simple architecture of the algorithm of this game.
 2. True
 3. False
 
-![State Graph](../master/image/FMS.png)
+![FMS graph](../master/image/FMS.png)
 
 Note: 
 * Inside the state 'Check consistence', there could be substates such as; 'goToPoint' and 'receiving Hints'.
