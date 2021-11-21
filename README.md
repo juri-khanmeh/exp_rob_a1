@@ -45,6 +45,7 @@ rosrun exp_rob_a1 s_machine
 
 Note: 
 * I did not know why if I run the `state_machine` in the launch file the simulation fails.
+* I did not know why in the doxygen documentation the page for the file `EngConverter_server.cpp` fails to open. Whereas, if I open the file `\docs\files.html`, the page can successfully be opened.
 
 ## Working Hypothesis and environment
 ### System's feature
