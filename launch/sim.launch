@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <launch>
-	
+   <node name="stage" pkg="stage_ros" type="stageros" args="$(find exp_rob_a1)/world/exercise.world" />	
    <node name="HintServer" pkg="exp_rob_a1" type ="hint_server"/>
    <node name="oracleServer"  pkg="exp_rob_a1" type="oracle_server" />
    <node name="englishServer"  pkg="exp_rob_a1" type="converter_server" />
