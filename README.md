@@ -71,3 +71,7 @@ Note:
 * Using ARMOR can give more flexibility for accessing and modifying ontological databases.
 * Display rooms in 2d environment. 
 
+The documentation can found here:
+
+https://juri-khanmeh.github.io/exp_rob_a1/ 
+
