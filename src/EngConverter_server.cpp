@@ -8,7 +8,7 @@
 * \details
 *
 * Services : <BR>
-* ° /target
+* ° /eng_sentence
 *
 * Description :
 *
