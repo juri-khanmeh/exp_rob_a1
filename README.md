@@ -17,7 +17,20 @@ The packege implement a simple architecture of the algorithm of this game.
 
 ### State Diagram
 * Finit State Machine is shown in the graph below.
-![State Graph](../master/image/state_machine.png)
+* There are 3 states:
+1. Check consistence (for hypothesis)
+2. Validate Hypothesis
+3. Stop
+
+* Besides, there are 3 events:
+1. start/stop
+2. True
+3. False
+
+![State Graph](../master/image/FMS.png)
+
+Note: 
+* Inside the state 'Check consistence', there could be substates such as; 'goToPoint' and 'receiving Hints'.
 
 ## Instruction how to run the code:
 
@@ -31,7 +44,7 @@ rosrun exp_rob_a1 s_machine
 ```
 
 Note: 
-* I did not know why if I run the `s_machine` in the launch file the simulation fails.
+* I did not know why if I run the `state_machine` in the launch file the simulation fails.
 
 ## Working Hypothesis and environment
 ### System's feature
@@ -41,18 +54,18 @@ The system concerns of:
 * the usage of the Cluedo ontology to manage hypothesis.
 * the random-based generation of hints and the validation of hypothesis.
 * the simulated motion in the environment.
-* Robot is a point, rooms are positions.
+* Robot is a point, rooms are also represented by point positions.
 
 Note:
 * The system works in ROS environment.
 * Python must be installed.
 
 ### System's limitations
-* There is no interface to interact with this system (from user's point of view). Which means that the user cannot start, stop or restart the simulation once the nodes are executed.
-* The data (hints) are limited. And it must inserted manually not by reading a file.
+* There is no interface to interact with this system (from user's point of view), which means that the user cannot start, stop or restart the simulation once the nodes are executed.
+* The database (hints) are limited. And it must inserted manually not by reading a file.
 * The simulation environment is not clear. For example, the room divisions are not displayed in the 2d environment.
 
-### Possible improvement
+### Possible improvements
 * Adding a user interface (start/stop/restart).
 * Convert the `goPoint` service server to simple action server.
 * Using ARMOR can give more flexibility for accessing and modifying ontological databases.
